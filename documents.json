@@ -1,0 +1,47 @@
+[{
+    "title":"Add New",
+     "service_request_type": "add_new",
+    "onsubmit":"submitData",
+    "description":"",
+    "tabs":[
+      {
+        "tabName":"Add New",
+        "sections":[
+          {
+            "sectionName":"Add New",
+            "fields":[
+             
+              [ {
+                "key":"document_type",
+                "type":"dropDown",
+                "label":"Document Type",
+                "required":true,
+                "disabled":false,
+                "initialValue":"",
+                "option": {
+                  "1": "Aadhar Card",
+                  "2": "Pan Card"
+                }
+              },
+              {
+                "key":"uploadFile",
+                "type":"upload",
+                "label":"Upload File",
+                "initialValue":"",
+                "visible": true,
+                "required":true,
+                "disabled":false
+              }]
+            ],
+            "button": {
+              "submit" : {
+                "label": "Submit",
+                "action": "forms.submit",
+                "variant": null
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }]
